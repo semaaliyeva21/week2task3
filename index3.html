@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form method="get">
+    <div>
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" minlength="3"> <br>
+            <label for="Email">Email Address:</label>
+            <input id="Email" type="email" > <br>
+            <label for="num">Phone Number:</label>
+            <input id="num" type="tel"> <br>
+           
+
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Event Details</legend>
+            <label for="event">Event name:</label>
+            <input id="event" type="text" required > <br>
+            <label for="date">Event Date:</label>
+            <input id="date" type="date" required > <br>
+            <label for="loc">Event Location:</label>
+            <input id="loc"  type="text">
+
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Ticket selection</legend>
+            <p>Choose Ticket Type:</p>
+
+            <input id="add" type="radio" name="radio" required > 
+            <label for="add"  >Standart </label> <br>
+            <input id="vip" type="radio"required name="radio" > 
+            <label for="vip" >Vip</label> <br>
+            <label for="qu">Quantity:</label>
+            <input id="qu" type="text">
+
+        </fieldset>
+
+    </div>
+    <div>
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <p>Do you have any dietary preferences?</p>
+            <input id="trian" type="checkbox" name="and">
+            <label for="trian">Vegeterian</label> <br>
+            <input id="an" type="checkbox" name="and">
+            <label for="an">Vegan</label> <br>
+            <input id="en" type="checkbox" name="and">
+            <label for="en">Fluten-Free</label> <br>
+
+        </fieldset>
+    </div>
+    <div>
+        <label for="com">Additional Comments:</label> <br>
+        <textarea></textarea>
+    </div>
+    <div>
+        <input id="sub" type="checkbox">
+        <label>L agree to the terms and conditions</label>
+    </div>
+    <div>
+        <input type="submit" value="register">
+        <input  type="reset" value="Reset">
+    </div>
+    </form>
+    
+</body>
+</html>
